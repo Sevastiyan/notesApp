@@ -8,14 +8,10 @@ const Note = require('../models/note')
 
 beforeEach(async () => {
     await Note.deleteMany({})
-    console.log('cleared')
-
-    helper.initialNotes.forEach(async (note) => {
+    for (let note of helper.initialNotes) {
         let noteObject = new Note(note)
         await noteObject.save()
-        console.log('saved')
-    })
-    console.log('done')
+      }
 })
 
 test('notes are returned as json', async () => {
@@ -91,13 +87,11 @@ test('a note can be deleted', async () => {
         .expect(204)
 
     const notesAtEnd = await helper.notesInDb()
-
     expect(notesAtEnd).toHaveLength(
       helper.initialNotes.length - 1
     )
 
     const contents = notesAtEnd.map(r => r.content)
-
     expect(contents).not.toContain(noteToDelete.content)
   })
 
