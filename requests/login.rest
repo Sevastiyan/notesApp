@@ -1,0 +1,9 @@
+###
+post http://localhost:3001/api/login
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYzMmMwYzFjZWZjZjE3YjZiZDBkMDc1OCIsImlhdCI6MTY2MzgzNTc4Mn0.B_aLiBswT9r-GI8aswM1CzzPTBpnCnRapxPQc3Jzo_0
+
+{
+    "username": "root",
+    "password": "salainen"
+}

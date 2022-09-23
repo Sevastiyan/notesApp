@@ -1,11 +1,11 @@
-GET http://localhost:3001/api/notes/
+GET http://localhost:3001/api/notes
 
 ###
-POST http://localhost:3001/api/notes/ HTTP/1.1
-content-type: application/json
+POST http://localhost:3001/api/notes HTTP/1.1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYzMmMwYzFjZWZjZjE3YjZiZDBkMDc1OCIsImlhdCI6MTY2MzgzNjY2OX0.d_pcQg9MofiRMdqnwO46zsGwzvWVPZ4Kq2QCcGK1NY8
 
 {
-    "name": "sample",
-    "content": "Content",
-    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+    "content": "Not an important note",
+    "important": false,
 }
