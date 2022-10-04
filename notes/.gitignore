@@ -1,6 +1,9 @@
 node_modules
 .env
 .vscode 
+.eslintrc.js
 
 build/
+cypress/screenshots
+cypress/videos
 db.json
