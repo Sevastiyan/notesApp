@@ -11,7 +11,7 @@ module.exports = {
   },
   rules: {
     eqeqeq: 'error',
-    'no-trailing-spaces': 'error',
+    // 'no-trailing-spaces': 'warning',
     'object-curly-spacing': ['error', 'always'],
     'arrow-spacing': ['error', { before: true, after: true }],
     'linebreak-style': ['error', 'windows'],
